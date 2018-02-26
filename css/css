@@ -1,0 +1,22 @@
+.top {
+	width: 300;
+	vertical-align: middle;
+	position: relative;
+}
+
+.navigation{
+	margin: 0;
+  	padding: 0;
+  	list-style-type: none;
+  	width: 100px;
+}
+.nav-li{
+	display: inline;
+}
+.tabl {
+	display:inline;
+
+}
+
+
+}
