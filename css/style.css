@@ -3,22 +3,32 @@
 
 @font-face {
   font-family: 'AleoRegular';
-  src: url('..fonts/aleo-regular-webfont.eot');
-  src: url('..fonts/aleo-regular-webfont.eot') format('embedded-opentype'),
-  url('..fonts/aleo-regular-webfont.woff2') format('woff2'),
-  url('..fonts/aleo-regular-webfont.woff') format('woff'),
-  url('..fonts/aleo-regular-webfont.ttf') format('truetype');
-  src: url('../Aleo-Regular.otf') format('opentype');
+  src: url('../fonts/aleo-regular-webfont.eot');
+  src: url('../fonts/aleo-regular-webfont.eot') format('embedded-opentype'),
+  url('../fonts/aleo-regular-webfont.woff2') format('woff2'),
+  url('../fonts/aleo-regular-webfont.woff') format('woff'),
+  url('../fonts/aleo-regular-webfont.ttf') format( 'truetype');
+  src: url('../fonts/Aleo-Regular.otf') format('opentype');
 }
-
-
 
 
 
 html, body {
 	height: 100%;
 	font-family: 'Josefin Sans', sans-serif;
+	font-size: 16px;
+    font-weight: 200;
+	line-height: 24px;
 	box-sizing: border-box;
+}
+
+
+.title {
+	font-size: 36px;
+    line-height: 26px;
+    font-family: AleoRegular;
+    font-weight: 100;
+    margin-bottom: 40px;
 }
 
 
@@ -45,6 +55,7 @@ html, body {
 	line-height: 26px;
 	font-weight: 400;
 	letter-spacing: 2px;
+	margin: 0 0 12px;
 }
 
 .header__subtitle{
@@ -52,6 +63,7 @@ html, body {
 	line-height: 26px;
 	font-weight: 300;
 	letter-spacing: 3px;
+	margin: 0 0 55px;
 }
 
 .header__form {
@@ -83,6 +95,171 @@ html, body {
 	text-transform: uppercase;
 }
 
+.header__input::placeholder {
+ 	letter-spacing: 3px;
+ 	text-align: center;
+ 	font-size: 14px;
+ 	line-height: 26px;
+ 	opacity: .7;
+}
+
 .header__form .fa {
 	margin-left: 15px;
 }
+
+.header__arrow-down {
+	margin-top: 110px;
+}
+
+.header__arrow-down span:first-of-type {
+	font-weight: 300;
+} 
+
+.header__arrow-down span {
+	display: block;
+	letter-spacing: 2px;
+	margin-bottom: 5px;
+	cursor: pointer;
+}
+
+
+
+
+.header__nav {
+	background: #5474FD;
+	min-height: 80px;
+}
+
+.header__logo {
+	display: flex;
+	align-items: center;
+	height: 80px;
+}
+
+.header__logo a {
+	text-transform: uppercase;
+	font-size: 24px;
+	line-height: 26px;
+	font-weight: bold;
+	color: #fff;
+}
+
+.header__logo a:hover,
+.header__logo a:focus {
+	color: #fff;
+	text-decoration: none;
+}
+
+
+.header__list {
+	display: flex;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-size: 0;
+	float: right;
+	height: 80px;	
+}
+
+.header__item {
+	display: inline-block;
+}
+
+.header__item:not(:last-of-type) {
+	margin-right: 40px;
+}
+
+.header__link {
+	position: relative;
+	display: block;
+	font-size: 14px;
+	line-height: 26px;
+	font-family: AleoRegular, serif;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.header__link::before {
+	content: "";
+	position: absolute;
+	display: block;
+	left: 0;
+	bottom: 0;
+	width: 0;
+	height: 1px;
+	background: #fff;
+	transition: width .25s
+}
+
+.header__link:hover {
+	color: #fff;
+	text-decoration: none;
+}
+
+.header__item:hover .header__link::before {
+	width: 100%;
+}
+
+
+.wcu {
+	background: url('../image/7.jpg') no-repeat center;
+	background-size: cover;
+	padding-top: 120px;
+	padding-bottom: 135px;
+}
+
+
+.wcu__content {
+	color: #fff;
+	margin-top: 55px;
+}
+
+.wcu__content h2 {
+  
+}
+
+.wcu__content p {
+	margin-bottom: 30px;
+}
+
+.wcu__content a {
+	display: inline-block;
+	width: 230px;
+	height: 60px;
+	line-height: 60px;
+	border: none;
+	color: #fff;
+	background: #5474FD;
+	font-family: AleoRegular, serif;
+	font-size: 16px;
+	text-transform: uppercase;
+	text-align: center;
+}
+.wcu__content a :hover {
+	text-decoration: none;
+}
+
+
+.wcu__img-wrap {
+	display: inline-block;
+	margin: auto;
+	width: 335px;
+	max-height: 215px;
+	overflow: hidden;
+}
+
+.wcu__img-wrap img {
+	max-width: 100%;
+}
+
+
+.wcu__img-wrap:first-of-type {
+	margin-left: 65px;
+}
+
+.wcu__img-wrap:last-of-type {
+	float: right;
+}
+
+
