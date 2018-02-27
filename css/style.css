@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700');
+
+
+@font-face {
+  font-family: 'AleoRegular';
+  src: url('..fonts/aleo-regular-webfont.eot');
+  src: url('..fonts/aleo-regular-webfont.eot') format('embedded-opentype'),
+  url('..fonts/aleo-regular-webfont.woff2') format('woff2'),
+  url('..fonts/aleo-regular-webfont.woff') format('woff'),
+  url('..fonts/aleo-regular-webfont.ttf') format('truetype');
+  src: url('../Aleo-Regular.otf') format('opentype');
+}
+
+
+
+
+
+html, body {
+	height: 100%;
+	font-family: 'Josefin Sans', sans-serif;
+	box-sizing: border-box;
+}
+
+
+.header__main {
+	position: relative;
+	height: 100vh;
+	background: url('../image/1.jpg') no-repeat center;
+	background-size: cover;
+}
+
+.header__main-wrap {
+   	position: absolute;
+    top: 50%;
+    left: 50%;
+    /* text-align: center; */
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: #fff;
+}
+
+.header__title{
+	font-size: 42px;
+	text-transform: uppercase;
+	line-height: 26px;
+	font-weight: 400;
+	letter-spacing: 2px;
+}
+
+.header__subtitle{
+	font-size: 22px;
+	line-height: 26px;
+	font-weight: 300;
+	letter-spacing: 3px;
+}
+
+.header__form {
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+	width: 650px;
+	text-align: left;
+	background: #fff;
+}
+
+.header__form .header__input {
+	width: calc(100% - 160px);
+	height: 60px;
+	border: none;
+	box-sizing: border-box;
+	outline: none;
+}
+
+.header__form button {
+	width: 150px;
+	height: 56px;
+	margin-right: 2px;
+	border: none;
+	background: #5474FD;
+	font-family: AleoRegular, serif;
+	font-size: 14px;
+	line-height: 26px;
+	text-transform: uppercase;
+}
+
+.header__form .fa {
+	margin-left: 15px;
+}
